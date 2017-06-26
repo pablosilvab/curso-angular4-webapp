@@ -71,6 +71,9 @@
     color: gray;
 }
 
+#form-producto label{
+    margin-top: 10px;
+}
 
 img {
     display: block;
