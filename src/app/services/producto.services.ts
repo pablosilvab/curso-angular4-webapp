@@ -18,4 +18,13 @@ export class ProductoService{
     getProductos(){
         return this._http.get(this.url+'productos').map(res => res.json());
     }
+
+    addProducto(producto: Producto){
+        let json = JSON.stringify(producto);
+        let params = 'json='+json;
+        let headers = new Headers({'Content-type':'application/x-www-form-urlencoded'});    
+        
+        return this._http.post(this.url+'productos', params, {headers: headers})
+                         .map(res => res.json());
+    }
 }
