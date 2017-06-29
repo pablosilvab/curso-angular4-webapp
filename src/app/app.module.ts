@@ -1,3 +1,4 @@
+import { ProductoDetailComponent } from './components/producto-detail.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +21,8 @@ import { ProductoAddComponent } from './components/producto-add.component';
     HomeComponent,
     ErrorComponent,
     ProductosListComponent,
-    ProductoAddComponent
+    ProductoAddComponent,
+    ProductoDetailComponent
   ],
   imports: [
     BrowserModule,
