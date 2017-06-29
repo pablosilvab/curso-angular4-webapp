@@ -1,3 +1,4 @@
+import { ProductoEditComponent } from './components/producto-edit.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
 
@@ -14,6 +15,7 @@ const appRoutes: Routes = [
     {path: 'productos', component: ProductosListComponent},
     {path: 'crear-producto', component: ProductoAddComponent},
     {path: 'producto/:id', component:ProductoDetailComponent},
+    {path: 'editar-producto/:id', component:ProductoEditComponent},
     {path: '**', component: ErrorComponent}
 ];
 
